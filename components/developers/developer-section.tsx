@@ -5,27 +5,33 @@ import Link from "next/link";
 const developerLayers = [
   {
     number: "01",
-    title: "Your Application",
-    description: "Build the product and experience your users actually need.",
+    title: "Application Layer",
+    description: "Build enterprise applications, agents, and autonomous workflows using platform capabilities.",
     type: "APPLICATION",
   },
   {
     number: "02",
-    title: "Shree SDK",
-    description: "Interact with platform capabilities through developer interfaces.",
-    type: "INTERFACE",
+    title: "SDK Layer (10 Facades)",
+    description: "Type-safe interfaces for Memory, Knowledge, Planning, Reasoning, Reflection, Inference, and more.",
+    type: "SDK",
   },
   {
     number: "03",
-    title: "Shree Runtime",
-    description: "Coordinate execution, lifecycle, context, and platform services.",
+    title: "Runtime Orchestration",
+    description: "11-stage cognitive execution pipeline, Dual-Mode Synthesis, lifecycle, and security state.",
     type: "RUNTIME",
   },
   {
     number: "04",
-    title: "Intelligence Kernels",
-    description: "Reuse capabilities such as memory, knowledge, planning, and reasoning.",
+    title: "Kernel Services",
+    description: "Graph Memory, K0.6 domain-isolated knowledge, pgvector RRF, and reflection engines.",
     type: "KERNELS",
+  },
+  {
+    number: "05",
+    title: "LLM & Provider Layer",
+    description: "LlmRouter with gemini-3.6-flash, HTTP 503/429 exponential backoff retries and deterministic fallback.",
+    type: "PROVIDERS",
   },
 ];
 

@@ -4,69 +4,67 @@ const architectureLayers = [
   {
     number: "01",
     name: "APPLICATIONS",
-    title: "Intelligent Applications",
+    title: "Application Layer",
     description:
-      "Applications sit at the top of the architecture and focus on their own domain, product experience, and user workflows.",
+      "Enterprise systems, Spring Boot microservices, APIs, and product experiences consuming deterministic AI capabilities.",
     components: [
-      "Product Experience",
+      "Spring Boot 3/4",
+      "Microservices",
+      "REST Endpoints",
       "Domain Logic",
-      "User Workflows",
-      "Application State",
     ],
   },
   {
     number: "02",
     name: "INTERFACES",
-    title: "Developer Interfaces",
+    title: "SDK Layer (10 Verified Facades)",
     description:
-      "Stable interfaces connect applications with Shree AI OS without requiring applications to depend directly on internal implementations.",
+      "Public Java 21 client interfaces providing typed, deterministic access to memory, planning, code patches, and model routing.",
     components: [
-      "SDK",
-      "REST APIs",
-      "CLI",
-      "Platform Contracts",
+      "client.chat()",
+      "client.memory()",
+      "client.knowledge()",
+      "client.planning()",
+      "client.developer()",
     ],
   },
   {
     number: "03",
     name: "RUNTIME",
-    title: "Shree Runtime",
+    title: "Runtime Orchestration Layer",
     description:
-      "The runtime connects requests, context, execution, coordination, and platform services into a controlled execution environment.",
+      "Deterministic 11-stage cognitive execution pipeline, fail-closed authorization gate, multi-tenant boundaries, and event dispatching.",
     components: [
-      "Context",
-      "Execution",
-      "Coordination",
-      "Lifecycle",
+      "11-Stage Pipeline",
+      "Fail-Closed Gate",
+      "Intent Router",
+      "Tenant Enforcer",
     ],
   },
   {
     number: "04",
-    name: "INTELLIGENCE",
-    title: "Intelligence Kernels",
+    name: "KERNELS",
+    title: "Kernel Services Layer",
     description:
-      "Reusable intelligence capabilities provide the primitives applications can consume for understanding, memory, reasoning, planning, and execution.",
+      "In-process cognitive kernels for episodic memory, pgvector hybrid RRF search, topological DAG planning, and AST code patch generation.",
     components: [
-      "Memory",
-      "Knowledge",
-      "Reasoning",
-      "Planning",
-      "Execution",
+      "Episodic Memory",
+      "pgvector HNSW + GIN",
+      "K0.6 Acquisition",
+      "JavaParser AST",
     ],
   },
   {
     number: "05",
-    name: "FOUNDATION",
-    title: "Platform Core",
+    name: "PROVIDERS",
+    title: "LLM Provider Layer (BYOK)",
     description:
-      "The foundational platform layer provides the services and contracts required for the rest of the system to operate consistently.",
+      "Swappable model integration with automatic HTTP 429/503 exponential backoff retries and deterministic in-memory fallback.",
     components: [
-      "Configuration",
-      "Registry",
-      "Discovery",
-      "Lifecycle",
-      "Events",
-      "Health",
+      "Google Gemini",
+      "OpenAI",
+      "Ollama",
+      "In-Memory Fallback",
     ],
   },
 ];
@@ -149,7 +147,7 @@ export default function ArchitecturePage() {
 
               <div className="architecture-status">
                 <span />
-                V1 · ARCHITECTURE FOUNDATION
+                v1.0.6 · ARCHITECTURE FOUNDATION
               </div>
 
             </div>
@@ -348,8 +346,8 @@ export default function ArchitecturePage() {
 
             <div className="architecture-flow-node">
               <span>01</span>
-              <strong>Application Intent</strong>
-              <small>User / Application Request</small>
+              <strong>Identity & Context</strong>
+              <small>Actor Resolution & Tenant Boundaries</small>
             </div>
 
             <div className="architecture-flow-arrow">
@@ -358,8 +356,8 @@ export default function ArchitecturePage() {
 
             <div className="architecture-flow-node">
               <span>02</span>
-              <strong>Context</strong>
-              <small>Relevant State / Information</small>
+              <strong>Memory & Knowledge</strong>
+              <small>Dual-Channel RRF & K0.6 Acquisition</small>
             </div>
 
             <div className="architecture-flow-arrow">
@@ -368,8 +366,8 @@ export default function ArchitecturePage() {
 
             <div className="architecture-flow-node architecture-flow-highlight">
               <span>03</span>
-              <strong>Intelligence</strong>
-              <small>Reasoning / Memory / Planning</small>
+              <strong>Reasoning & Inference</strong>
+              <small>Fact Checking & Hypothesis Scoring</small>
             </div>
 
             <div className="architecture-flow-arrow">
@@ -378,8 +376,8 @@ export default function ArchitecturePage() {
 
             <div className="architecture-flow-node">
               <span>04</span>
-              <strong>Runtime</strong>
-              <small>Coordination / Execution</small>
+              <strong>Planning & Execution</strong>
+              <small>Topological DAG & Fail-Closed Gate</small>
             </div>
 
             <div className="architecture-flow-arrow">
@@ -388,8 +386,18 @@ export default function ArchitecturePage() {
 
             <div className="architecture-flow-node">
               <span>05</span>
-              <strong>Outcome</strong>
-              <small>Application Result</small>
+              <strong>Reflection & Review</strong>
+              <small>Adaptive Calibration & Governance</small>
+            </div>
+
+            <div className="architecture-flow-arrow">
+              ↓
+            </div>
+
+            <div className="architecture-flow-node">
+              <span>06</span>
+              <strong>Dual-Mode Synthesis</strong>
+              <small>Strict RAG Citations vs. General Fallback</small>
             </div>
 
           </div>

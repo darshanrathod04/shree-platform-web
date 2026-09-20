@@ -254,9 +254,9 @@ function BuildResultCard({ result, showMarkdown, onToggleMarkdown }: { result: W
           <div className="grid grid-cols-2 gap-3">
             {result.testSkeletons.map((t, i) => (
               <div key={i} className="rounded-xl p-3" style={{ background: 'var(--background)', border: '1px solid var(--border)' }}>
-                <p className="font-mono text-xs font-medium">{t.className}</p>
+                <p className="font-mono text-xs font-medium">{t.testClassName}</p>
                 <p className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
-                  {t.testName} · {t.caseCount} cases
+                  {t.classUnderTest} · {t.methodCount} test methods
                 </p>
               </div>
             ))}

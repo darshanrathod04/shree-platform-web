@@ -283,9 +283,9 @@ export default function SettingsPage() {
           </h3>
           <div className="grid grid-cols-3 gap-4 text-center">
             {[
-              { label: 'Platform', value: 'Shree AI OS v1.0' },
-              { label: 'SDK Version', value: '1.0.0' },
-              { label: 'Intelligence', value: 'In-Memory' },
+              { label: 'Platform', value: 'Shree AI OS v1.0.6' },
+              { label: 'SDK Version', value: '1.0.6-developer-preview' },
+              { label: 'Intelligence', value: 'Dual-Mode Synthesis' },
             ].map((item) => (
               <div key={item.label} className="rounded-xl p-3" style={{ background: 'var(--background)' }}>
                 <p className="text-xs" style={{ color: 'var(--muted)' }}>{item.label}</p>

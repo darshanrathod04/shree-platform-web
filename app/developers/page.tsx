@@ -4,34 +4,42 @@ const developerLayers = [
   {
     number: "01",
     type: "APPLICATION",
-    title: "Your Application",
+    title: "Application Layer",
     description:
       "Build the product, domain logic, and user experience your application actually needs.",
     details: ["Product Experience", "Domain Logic", "User Workflows"],
   },
   {
     number: "02",
-    type: "INTERFACE",
-    title: "Shree SDK",
+    type: "SDK",
+    title: "SDK Layer (10 Facades)",
     description:
-      "Connect your application to Shree AI OS through developer-facing interfaces instead of internal platform implementations.",
-    details: ["SDK", "APIs", "Contracts"],
+      "Connect your application to Shree AI OS through 10 verified developer-facing SDK facades instead of internal platform implementations.",
+    details: ["Memory & Knowledge", "Planning & Reasoning", "Inference & Execution"],
   },
   {
     number: "03",
     type: "RUNTIME",
-    title: "Shree Runtime",
+    title: "Runtime Orchestration",
     description:
-      "Coordinate context, lifecycle, platform services, and controlled execution between applications and intelligence capabilities.",
-    details: ["Context", "Lifecycle", "Execution"],
+      "11-stage cognitive execution pipeline, Dual-Mode Synthesis, context, and fail-closed security state.",
+    details: ["11-Stage Pipeline", "Dual-Mode Synthesis", "Fail-Closed RBAC"],
   },
   {
     number: "04",
-    type: "INTELLIGENCE",
-    title: "Intelligence Kernels",
+    type: "KERNELS",
+    title: "Kernel Services",
     description:
-      "Reuse platform capabilities such as memory, knowledge, reasoning, planning, and execution across applications.",
-    details: ["Memory", "Knowledge", "Reasoning", "Planning"],
+      "Reuse platform capabilities such as graph memory, K0.6 domain-isolated knowledge, pgvector RRF, and reflection engines.",
+    details: ["Graph Memory", "K0.6 Knowledge", "pgvector RRF", "Reflection"],
+  },
+  {
+    number: "05",
+    type: "PROVIDERS",
+    title: "LLM & Provider Layer",
+    description:
+      "LlmRouter with gemini-3.6-flash, exponential backoff retries on HTTP 503/429, and deterministic in-memory fallback.",
+    details: ["LlmRouter", "gemini-3.6-flash", "Backoff Retries", "Deterministic Fallback"],
   },
 ];
 
@@ -149,7 +157,7 @@ export default function DevelopersPage() {
 
               <div className="developers-status">
                 <span />
-                DEVELOPER FOUNDATION
+                v1.0.6 · DEVELOPER PREVIEW
               </div>
 
             </div>
@@ -392,28 +400,35 @@ export default function DevelopersPage() {
 
               <div>
                 <small>01</small>
-                <strong>Your Application</strong>
+                <strong>Application</strong>
               </div>
 
               <b>→</b>
 
               <div>
                 <small>02</small>
-                <strong>SDK / API</strong>
+                <strong>10 SDKs</strong>
               </div>
 
               <b>→</b>
 
               <div>
                 <small>03</small>
-                <strong>Shree Runtime</strong>
+                <strong>11-Stage Runtime</strong>
               </div>
 
               <b>→</b>
 
               <div>
                 <small>04</small>
-                <strong>Intelligence</strong>
+                <strong>Kernel Services</strong>
+              </div>
+
+              <b>→</b>
+
+              <div>
+                <small>05</small>
+                <strong>LLM Providers</strong>
               </div>
 
             </div>

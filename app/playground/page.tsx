@@ -183,7 +183,7 @@ export default function PlaygroundPage() {
             </p>
 
             <p className="font-semibold">
-              1.0.0
+              1.0.6-developer-preview
             </p>
 
           </div>
