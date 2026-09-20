@@ -6,28 +6,28 @@ const gettingStarted = [
     title: "Introduction",
     description:
       "Understand what Shree AI OS is, why it exists, and how the platform is structured.",
-    href: "/docs/introduction",
+    href: "/platform",
   },
   {
     number: "02",
-    title: "Installation",
+    title: "Quickstart Guide",
     description:
-      "Prepare your development environment and get the Shree AI OS platform running.",
-    href: "/docs/installation",
+      "Prepare your Java 21 environment and add the v1.0.6 Maven dependency.",
+    href: "/quickstart",
   },
   {
     number: "03",
-    title: "Quick Start",
+    title: "SDK Reference",
     description:
-      "Explore the basic developer workflow and understand how applications interact with the platform.",
-    href: "/docs/quick-start",
+      "Explore the 10 verified SDK facades for memory, knowledge, reasoning, and planning.",
+    href: "/sdk",
   },
   {
     number: "04",
-    title: "First Application",
+    title: "Platform Architecture",
     description:
-      "Follow the foundation for building an application on top of Shree AI OS.",
-    href: "/docs/first-application",
+      "Understand the 5-layer platform model and 11-stage cognitive execution pipeline.",
+    href: "/architecture",
   },
 ];
 
@@ -55,32 +55,32 @@ const coreConcepts = [
 const developerResources = [
   {
     number: "01",
-    title: "SDK",
+    title: "10 Verified SDKs",
     description:
-      "Developer interfaces for interacting with Shree AI OS capabilities.",
+      "Deterministic developer interfaces for interacting with Shree AI OS capabilities.",
     href: "/sdk",
   },
   {
     number: "02",
-    title: "APIs",
+    title: "Developer Platform",
     description:
-      "Explore platform-facing interfaces and application integration patterns.",
-    href: "/docs/apis",
+      "Explore the 5-layer architecture and application integration patterns.",
+    href: "/developers",
   },
   {
     number: "03",
-    title: "Examples",
+    title: "Interactive Playground",
     description:
-      "Practical examples showing how platform capabilities can be composed into applications.",
-    href: "/docs/examples",
+      "Practical interactive environment testing platform capabilities across modules.",
+    href: "/playground",
   },
 ];
 
 const advancedTopics = [
-  "Architecture",
-  "Lifecycle",
-  "Contracts",
-  "Extensions",
+  { name: "Architecture", href: "/architecture" },
+  { name: "Security", href: "/security" },
+  { name: "Constitution", href: "/constitution" },
+  { name: "Roadmap", href: "/roadmap" },
 ];
 
 export default function DocumentationPage() {
@@ -128,7 +128,7 @@ export default function DocumentationPage() {
 
               <div className="docs-status">
                 <span />
-                DEVELOPER DOCUMENTATION
+                v1.0.6 · DEVELOPER DOCUMENTATION
               </div>
 
             </div>
@@ -185,7 +185,7 @@ export default function DocumentationPage() {
               <div className="docs-sidebar-note">
 
                 <span>
-                  V1
+                  v1.0.6
                 </span>
 
                 <p>
@@ -427,9 +427,9 @@ export default function DocumentationPage() {
 
                   {advancedTopics.map((topic, index) => (
                     <Link
-                      href={`/docs/${topic.toLowerCase()}`}
+                      href={topic.href}
                       className="docs-advanced-card"
-                      key={topic}
+                      key={topic.name}
                     >
 
                       <span>
@@ -437,7 +437,7 @@ export default function DocumentationPage() {
                       </span>
 
                       <strong>
-                        {topic}
+                        {topic.name}
                       </strong>
 
                       <b>

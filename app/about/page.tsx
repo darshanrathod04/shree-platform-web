@@ -3,24 +3,38 @@ import Link from "next/link";
 const platformLayers = [
   {
     number: "01",
-    label: "INFRASTRUCTURE",
-    title: "The foundation underneath.",
+    label: "APPLICATION",
+    title: "Software built on the foundation.",
     description:
-      "Runtime, platform contracts, execution services, and reusable infrastructure provide the base layer for intelligent software.",
+      "Enterprise applications, autonomous swarms, tools, and agents remain focused on domain experiences.",
   },
   {
     number: "02",
-    label: "INTELLIGENCE",
-    title: "Capabilities that can be reused.",
+    label: "SDK FACADES",
+    title: "10 deterministic developer interfaces.",
     description:
-      "Memory, reasoning, planning, knowledge, and other intelligence primitives can be shared across applications.",
+      "Type-safe facades for Memory, Knowledge, Planning, Reasoning, Reflection, Inference, Identity, Execution, Project, and Settings.",
   },
   {
     number: "03",
-    label: "APPLICATIONS",
-    title: "Software built on the foundation.",
+    label: "RUNTIME ORCHESTRATION",
+    title: "11-stage cognitive execution pipeline.",
     description:
-      "Applications use the platform capabilities while remaining focused on their own domain, users, and experiences.",
+      "Deterministic pipeline orchestrating Identity, Context, Memory, Knowledge, Reasoning, Inference, Planning, Execution, Reflection, and Review.",
+  },
+  {
+    number: "04",
+    label: "KERNEL SERVICES",
+    title: "Core intelligence infrastructure.",
+    description:
+      "Graph memory, pgvector RRF hybrid search, K0.6 Autonomous Acquisition, and deterministic topological planners.",
+  },
+  {
+    number: "05",
+    label: "LLM PROVIDERS",
+    title: "Resilient model routing.",
+    description:
+      "LlmRouter with gemini-3.6-flash, HTTP 503/429 exponential backoff retries, and deterministic in-memory fallback.",
   },
 ];
 
@@ -98,7 +112,7 @@ export default function AboutPage() {
 
               <div className="about-status">
                 <span />
-                PLATFORM FOUNDATION
+                v1.0.6 · DEVELOPER PREVIEW
               </div>
 
             </div>
@@ -173,7 +187,7 @@ export default function AboutPage() {
               </span>
 
               <h2>
-                Three layers.
+                Five layers.
                 <br />
                 <span>One foundation.</span>
               </h2>

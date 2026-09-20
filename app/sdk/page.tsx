@@ -3,38 +3,73 @@ import Link from "next/link";
 const interfaces = [
   {
     number: "01",
-    type: "RUNTIME",
-    title: "Runtime",
+    type: "MEMORY",
+    title: "MemorySDK (client.memory())",
     description:
-      "Connect applications with the Shree runtime for lifecycle, context, execution, and platform-level coordination.",
+      "Persistent episodic context, semantic recall, and thread-safe session caching scoped strictly per tenant.",
   },
   {
     number: "02",
-    type: "MEMORY",
-    title: "Memory",
+    type: "KNOWLEDGE",
+    title: "KnowledgeSDK (client.knowledge())",
     description:
-      "Build applications that can work with persistent context and reusable memory capabilities provided by the platform.",
+      "Hybrid RRF vector retrieval (PostgreSQL pgvector HNSW + GIN FTS) and K0.6 Autonomous Knowledge Acquisition.",
   },
   {
     number: "03",
-    type: "KNOWLEDGE",
-    title: "Knowledge",
+    type: "PLANNING",
+    title: "PlanningSDK (client.planning())",
     description:
-      "Connect application workflows with knowledge-oriented platform capabilities and structured information.",
+      "Deterministic goal decomposition into topological DAGs with typed constraints and validation criteria.",
   },
   {
     number: "04",
     type: "REASONING",
-    title: "Reasoning",
+    title: "ReasoningSDK (client.reasoning())",
     description:
-      "Use reusable reasoning capabilities while keeping intelligence infrastructure separate from application logic.",
+      "Structured thought evaluation, premise verification, and conflict-free evidence graph construction.",
   },
   {
     number: "05",
-    type: "PLANNING",
-    title: "Planning",
+    type: "REFLECTION",
+    title: "ReflectionSDK (client.reflection())",
     description:
-      "Build goal-oriented workflows using platform planning capabilities without rebuilding planning infrastructure.",
+      "Post-execution reflection, outcome analysis, adaptive threshold tuning, and tenant-scoped performance analytics.",
+  },
+  {
+    number: "06",
+    type: "INFERENCE",
+    title: "InferenceSDK (client.inference())",
+    description:
+      "Deterministic hypothesis scoring, tradeoff evaluation, and calibrated confidence tier assessment.",
+  },
+  {
+    number: "07",
+    type: "IDENTITY",
+    title: "IdentitySDK (client.identity())",
+    description:
+      "Actor resolution, tenant isolation enforcement, workspace identification, and profile management.",
+  },
+  {
+    number: "08",
+    type: "EXECUTION",
+    title: "ExecutionSDK (client.execution())",
+    description:
+      "Action plan execution protected by the fail-closed authorization gate (graphPermissionManager).",
+  },
+  {
+    number: "09",
+    type: "PROJECT",
+    title: "ProjectSDK (client.project())",
+    description:
+      "JavaParser Java 21 AST analysis, structural impact analysis, in-memory patch generation, and workspace scanning.",
+  },
+  {
+    number: "10",
+    type: "SETTINGS",
+    title: "SettingsSDK (client.settings())",
+    description:
+      "Zero-downtime hot-reload BYOK credential storage, provider routing thresholds, and runtime configuration.",
   },
 ];
 
@@ -131,7 +166,7 @@ export default function SDKPage() {
 
               <div className="sdk-status">
                 <span />
-                DEVELOPER INTERFACE
+                v1.0.6 · 10 VERIFIED SDKS
               </div>
 
             </div>

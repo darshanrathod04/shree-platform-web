@@ -1,33 +1,40 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Shree Personal AI — Personal Intelligence Layer",
+  description:
+    "A personal intelligence layer built on Shree AI OS for episodic context retention, goal planning, and daily workflow assistance.",
+};
 
 const capabilities = [
   {
     number: "01",
-    title: "Project Memory",
+    title: "Episodic User Memory",
     description:
-      "Maintain project context, decisions, knowledge, and important information across the lifecycle.",
+      "Retain user preferences, interaction history, and contextual continuity across conversations and workflows.",
   },
   {
     number: "02",
-    title: "Intelligent Planning",
+    title: "Goal Planning & Synthesis",
     description:
-      "Break complex objectives into structured plans, tasks, milestones, and actionable steps.",
+      "Decompose long-term personal objectives into structured, trackable milestones and daily micro-tasks.",
   },
   {
     number: "03",
-    title: "Reasoning",
+    title: "Contextual Reasoning",
     description:
-      "Use platform intelligence to analyze context, evaluate problems, and support better decisions.",
+      "Apply deterministic reasoning across personal knowledge, schedule constraints, and active projects.",
   },
   {
     number: "04",
-    title: "Execution",
+    title: "Autonomous Action Execution",
     description:
-      "Connect planning and intelligence with the runtime capabilities required to move work forward.",
+      "Safely execute external tool actions with user permission gates and fail-closed privacy boundaries.",
   },
 ];
 
-export default function ProjectIntelligencePage() {
+export default function PersonalAIPage() {
   return (
     <main className="application-detail-page">
 
@@ -55,25 +62,25 @@ export default function ProjectIntelligencePage() {
 
             <div>
               <div className="application-detail-number">
-                01
+                02
               </div>
 
               <h1>
-                Shree Project
-                <span> Intelligence.</span>
+                Shree Personal
+                <span> AI.</span>
               </h1>
             </div>
 
             <div className="application-detail-intro">
               <p>
-                An intelligent project workspace built on Shree AI OS for
-                understanding projects, maintaining context, planning work,
-                reasoning through problems, and coordinating execution.
+                A personal intelligence layer designed to understand context,
+                remember interactions, manage goals, and assist across everyday
+                workflows without leaking private context outside the tenant.
               </p>
 
               <div className="application-detail-status">
                 <span />
-                ACTIVE DEVELOPMENT
+                IN ACTIVE DEVELOPMENT · v1.0.6
               </div>
             </div>
 
@@ -94,7 +101,7 @@ export default function ProjectIntelligencePage() {
                 <h2>
                   Intelligence around
                   <br />
-                  the project.
+                  the user.
                 </h2>
               </div>
 
@@ -111,10 +118,10 @@ export default function ProjectIntelligencePage() {
 
               <div className="system-core">
                 <div className="system-core-inner">
-                  S
+                  P
                 </div>
 
-                <span>PROJECT</span>
+                <span>PERSONAL</span>
               </div>
 
               <div className="system-node node-memory">
@@ -124,17 +131,17 @@ export default function ProjectIntelligencePage() {
 
               <div className="system-node node-planning">
                 <span />
-                Planning
+                Goals
               </div>
 
               <div className="system-node node-reasoning">
                 <span />
-                Reasoning
+                Context
               </div>
 
               <div className="system-node node-execution">
                 <span />
-                Execution
+                Assistant
               </div>
 
             </div>
@@ -152,9 +159,9 @@ export default function ProjectIntelligencePage() {
             <span>CAPABILITIES</span>
 
             <h2>
-              One workspace.
+              Everyday intelligence.
               <br />
-              Multiple layers of intelligence.
+              Deterministic privacy.
             </h2>
           </div>
 
@@ -196,17 +203,17 @@ export default function ProjectIntelligencePage() {
               <span>BUILT ON SHREE AI OS</span>
 
               <h2>
-                The application uses
+                Privacy-First
                 <br />
-                the platform.
+                Architecture.
               </h2>
             </div>
 
             <p>
-              Shree Project Intelligence is not an isolated AI application.
-              It consumes platform capabilities through defined interfaces,
-              allowing intelligence infrastructure to remain reusable across
-              future applications.
+              Shree Personal AI leverages the 5-layer platform architecture and
+              11-stage cognitive execution pipeline. All personal memories and
+              goals remain isolated within tenant-scoped vector boundaries with
+              zero telemetry leakage.
             </p>
 
           </div>

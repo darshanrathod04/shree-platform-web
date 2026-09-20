@@ -2,59 +2,59 @@ import Link from "next/link";
 
 const roadmapStages = [
   {
-    version: "V1",
+    version: "v1.0.6",
     status: "CURRENT",
     number: "01",
-    title: "Platform Foundation",
+    title: "Developer Preview & Cognitive Core",
     description:
-      "Establish the core runtime, platform contracts, reusable intelligence infrastructure, and developer foundations of Shree AI OS.",
+      "Establish the hardened 11-stage cognitive pipeline, Dual-Mode Synthesis, K0.6 domain-isolated knowledge, and 10 verified SDK facades on Java 21 LTS.",
     capabilities: [
-      "Platform Core",
-      "Runtime",
-      "Intelligence Kernels",
-      "Application Interfaces",
+      "11-Stage Pipeline",
+      "Dual-Mode Synthesis",
+      "10 Verified SDKs",
+      "Fail-Closed Security",
     ],
   },
   {
-    version: "V1.x",
+    version: "v1.1",
     status: "NEXT",
     number: "02",
-    title: "Intelligence Expansion",
+    title: "Advanced Autonomous Intelligence",
     description:
-      "Expand the platform with deeper memory, reasoning, knowledge, planning, and intelligence capabilities that applications can consume.",
+      "Expand the platform with dynamic multi-hop reasoning, distributed memory synchronization, pgvector RRF hybrid search, and streaming agents.",
     capabilities: [
-      "Advanced Memory",
-      "Reasoning Systems",
-      "Knowledge Layer",
-      "Planning",
+      "Multi-Hop Reasoning",
+      "Distributed Memory",
+      "pgvector RRF Search",
+      "Live Streaming Agents",
     ],
   },
   {
-    version: "V2",
+    version: "v2.0",
     status: "PLANNED",
     number: "03",
-    title: "Autonomous Runtime",
+    title: "Autonomous Agent Runtime",
     description:
-      "Move from intelligent capabilities toward systems that can execute goals, coordinate actions, and operate through controlled autonomy.",
+      "Move toward multi-agent coordination, autonomous goal synthesis, dynamic tool synthesis, and reflection gates.",
     capabilities: [
-      "Goal Execution",
-      "Autonomous Workflows",
-      "Tool Orchestration",
-      "Reflection",
+      "Multi-Agent Swarms",
+      "Goal Decomposition",
+      "Tool Synthesis",
+      "Automated Reflection",
     ],
   },
   {
-    version: "V2.x",
+    version: "v2.x",
     status: "PLANNED",
     number: "04",
-    title: "Multi-Agent Intelligence",
+    title: "Distributed AI Operating System",
     description:
-      "Enable multiple specialized intelligent systems to collaborate through shared platform primitives, communication contracts, and coordinated execution.",
+      "Enable distributed cognitive runtime, cluster-wide context distribution, zero-trust cryptographic audit, and heterogeneous LLM orchestration.",
     capabilities: [
-      "Agent Coordination",
-      "Multi-Agent Systems",
-      "Shared Context",
-      "Distributed Reasoning",
+      "Federated Runtime",
+      "Cluster Memory Sync",
+      "Cryptographic Audits",
+      "Model Auto-Sharding",
     ],
   },
   {
@@ -63,12 +63,12 @@ const roadmapStages = [
     number: "05",
     title: "AI Operating Ecosystem",
     description:
-      "Evolve Shree AI OS into a broader operating ecosystem where intelligent applications, agents, developers, and platform services work together.",
+      "Evolve Shree AI OS into a planetary-scale operating ecosystem connecting intelligent applications, autonomous swarms, developers, and hardware.",
     capabilities: [
       "Intelligent Applications",
-      "Agent Ecosystem",
+      "Autonomous Swarms",
       "Developer Platform",
-      "Intelligence Infrastructure",
+      "Cognitive Hardware Mesh",
     ],
   },
 ];
@@ -149,7 +149,7 @@ export default function RoadmapPage() {
 
               <div className="roadmap-status">
                 <span />
-                PLATFORM EVOLUTION
+                v1.0.6 · PLATFORM EVOLUTION
               </div>
 
             </div>
@@ -176,7 +176,7 @@ export default function RoadmapPage() {
             <div>
 
               <span className="roadmap-current-version">
-                V1
+                v1.0.6
               </span>
 
               <h2>
@@ -195,14 +195,14 @@ export default function RoadmapPage() {
               </div>
 
               <p>
-                The first stage establishes the core platform layer that
-                future intelligence capabilities and applications can build
-                upon.
+                The v1.0.6 developer preview establishes the hardened 11-stage cognitive
+                execution pipeline, dual-mode synthesis, fail-closed security gate, and 10
+                verified SDK facades on Java 21 LTS.
               </p>
 
               <div className="roadmap-current-line">
                 <span />
-                PLATFORM FOUNDATION
+                v1.0.6 · DEVELOPER PREVIEW
               </div>
 
             </div>

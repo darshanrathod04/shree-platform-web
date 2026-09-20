@@ -7,7 +7,6 @@ import { ThemeToggle } from "@/components/theme/theme-toggle";
 
 const navigation = [
   { label: "Platform", href: "/platform" },
-  { label: "Studio", href: "/studio" },
   { label: "Developers", href: "/developers" },
   { label: "Documentation", href: "/docs" },
   { label: "Applications", href: "/applications" },
@@ -68,7 +67,7 @@ export function Navbar() {
 
         <div className="navbar-actions">
           <a
-            href="https://github.com/"
+            href="https://github.com/darshanrathod04/shree-ai-os"
             target="_blank"
             rel="noopener noreferrer"
             className="github-link"
@@ -116,7 +115,7 @@ export function Navbar() {
 
         <div className="mobile-menu-footer">
           <a
-            href="https://github.com/"
+            href="https://github.com/darshanrathod04/shree-ai-os"
             target="_blank"
             rel="noopener noreferrer"
             className="mobile-github"

@@ -10,17 +10,17 @@ const platformLinks = [
 ];
 
 const developerLinks = [
-  { label: "Developers", href: "/#developers" },
-  { label: "SDK", href: "/sdk" },
+  { label: "Developers", href: "/developers" },
+  { label: "Quickstart", href: "/quickstart" },
+  { label: "10 SDKs", href: "/sdk" },
   { label: "Documentation", href: "/docs" },
-  { label: "Research", href: "/#research" },
 ];
 
 const resourceLinks = [
-  { label: "GitHub", href: "#" },
+  { label: "GitHub", href: "https://github.com/darshanrathod04/shree-ai-os" },
+  { label: "Security & Trust", href: "/security" },
   { label: "Constitution", href: "/constitution" },
   { label: "Mission", href: "/mission" },
-  { label: "Vision", href: "/vision" },
 ];
 
 export default function SiteFooter() {
@@ -108,7 +108,7 @@ export default function SiteFooter() {
 
               <span className="footer-brand-status">
                 <span />
-                PLATFORM FOUNDATION
+                v1.0.6 · DEVELOPER PREVIEW
               </span>
 
             </div>
@@ -189,8 +189,8 @@ export default function SiteFooter() {
             </div>
 
             <div className="footer-bottom-right">
-              <span>V1</span>
-              <span>PLATFORM FOUNDATION</span>
+              <span>v1.0.6</span>
+              <span>DEVELOPER PREVIEW</span>
             </div>
 
           </div>

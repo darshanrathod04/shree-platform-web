@@ -4,54 +4,70 @@ import SiteFooter from "@/components/footer/site-footer";
 const platformLayers = [
   {
     number: "01",
-    title: "Platform Core",
+    title: "Application Layer",
     description:
-      "The foundational layer responsible for configuration, lifecycle, discovery, health, events, and platform-level coordination.",
+      "Your enterprise applications, Spring Boot microservices, APIs, and business workflows consuming intelligence.",
     items: [
-      "Configuration",
-      "Registry",
-      "Discovery",
-      "Lifecycle",
-      "Events",
-      "Health",
+      "Spring Boot 3/4",
+      "Microservices",
+      "REST Endpoints",
+      "Domain Logic",
     ],
   },
   {
     number: "02",
-    title: "Intelligence Kernels",
+    title: "SDK Layer (10 Facades)",
     description:
-      "Reusable intelligence capabilities that applications can consume without rebuilding the underlying systems.",
+      "Public Java 21 client interfaces providing typed, deterministic access to memory, planning, code patches, and model routing.",
     items: [
-      "Identity",
-      "Memory",
-      "Knowledge",
-      "Reasoning",
-      "Planning",
-      "Execution",
+      "MemorySDK",
+      "KnowledgeSDK",
+      "PlanningSDK",
+      "ReasoningSDK",
+      "ReflectionSDK",
+      "IdentitySDK",
+      "ExecutionSDK",
+      "ProjectSDK",
+      "DeveloperSDK",
+      "MultiAgentSDK",
     ],
   },
   {
     number: "03",
-    title: "Runtime",
+    title: "Runtime Orchestration",
     description:
-      "The execution environment connecting platform services, intelligence capabilities, developer interfaces, and applications.",
+      "The deterministic execution brain enforcing the 11-stage pipeline, fail-closed authorization, multi-tenant boundaries, and event dispatching.",
     items: [
-      "Execution",
-      "Context",
-      "Lifecycle",
-      "Coordination",
+      "11-Stage Pipeline",
+      "Fail-Closed Gate",
+      "Intent Router",
+      "Event Bus",
+      "LlmRouter",
     ],
   },
   {
     number: "04",
-    title: "Developer Interfaces",
+    title: "Kernel Services",
     description:
-      "Interfaces that allow developers to build applications on top of Shree AI OS while remaining separated from internal implementations.",
+      "In-process cognitive kernels for episodic memory, pgvector hybrid RRF search, topological DAG planning, and AST code patch generation.",
     items: [
-      "SDK",
-      "REST APIs",
-      "CLI",
-      "Documentation",
+      "Episodic Memory",
+      "pgvector HNSW + GIN",
+      "K0.6 Acquisition",
+      "DAG Planner",
+      "AST Engine",
+    ],
+  },
+  {
+    number: "05",
+    title: "LLM Provider Layer (BYOK)",
+    description:
+      "Swappable model integration with automatic HTTP 429/503 exponential backoff retries and deterministic in-memory fallback.",
+    items: [
+      "Google Gemini",
+      "OpenAI",
+      "Ollama",
+      "In-Memory Fallback",
     ],
   },
 ];
@@ -108,7 +124,7 @@ export default function PlatformPage() {
 
               <div className="platform-status">
                 <span />
-                V1 · PLATFORM FOUNDATION
+                v1.0.6 · DEVELOPER PREVIEW
               </div>
 
             </div>
@@ -312,7 +328,7 @@ export default function PlatformPage() {
             <div className="platform-flow-node">
               <span>01</span>
               <strong>Your Application</strong>
-              <small>Product / Experience</small>
+              <small>Java 21 / Spring Boot 3/4</small>
             </div>
 
             <div className="platform-flow-connector">
@@ -321,8 +337,8 @@ export default function PlatformPage() {
 
             <div className="platform-flow-node">
               <span>02</span>
-              <strong>Developer Interfaces</strong>
-              <small>SDK / API / CLI</small>
+              <strong>10-SDK Facades</strong>
+              <small>client.chat() / memory() / planning() / developer()</small>
             </div>
 
             <div className="platform-flow-connector">
@@ -331,8 +347,8 @@ export default function PlatformPage() {
 
             <div className="platform-flow-node platform-flow-highlight">
               <span>03</span>
-              <strong>Shree Runtime</strong>
-              <small>Execution / Context / Coordination</small>
+              <strong>11-Stage Pipeline</strong>
+              <small>Identity → Context → Memory → Knowledge → Reasoning → Inference → Planning → Execution → Reflection → Store → Review</small>
             </div>
 
             <div className="platform-flow-connector">
@@ -341,8 +357,8 @@ export default function PlatformPage() {
 
             <div className="platform-flow-node">
               <span>04</span>
-              <strong>Intelligence Kernels</strong>
-              <small>Memory / Knowledge / Reasoning / Planning</small>
+              <strong>Dual-Mode Synthesis</strong>
+              <small>Strict RAG Citations vs. General Fallback</small>
             </div>
 
             <div className="platform-flow-connector">
@@ -351,8 +367,8 @@ export default function PlatformPage() {
 
             <div className="platform-flow-node">
               <span>05</span>
-              <strong>Platform Core</strong>
-              <small>Foundation / Services / Lifecycle</small>
+              <strong>K0.6 Knowledge & BYOK</strong>
+              <small>Domain Isolation & Multi-Provider Router</small>
             </div>
 
           </div>
